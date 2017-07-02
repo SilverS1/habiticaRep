@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="jumbotron">
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4">
+        	{% include 'ListBundle::lists/habits-list.html.twig' %}
+        </div>
+
+        <div class="col-md-4">
+          {% include 'ListBundle::lists/dailies-list.html.twig' %}
+       </div>
+
+        <div class="col-md-4">
+         {% include 'ListBundle::lists/todos-list.html.twig' %}
+        </div>
+
+      </div>
+
+  	</div>
+
+{% endblock %}

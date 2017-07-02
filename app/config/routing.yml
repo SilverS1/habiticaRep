@@ -1,0 +1,3 @@
+list:
+    resource: "@ListBundle/Resources/config/routing.xml"
+    prefix:   /

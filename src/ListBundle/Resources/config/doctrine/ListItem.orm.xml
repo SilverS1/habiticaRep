@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="ListBundle\Repository\ListItemRepository" name="ListBundle\Entity\ListItem">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="title" type="string" column="title" length="255"/>
+    <field name="notes" type="text" column="notes" nullable="true"/>
+    <field name="difficuly" type="integer" column="difficuly" nullable="true"/>
+    <field name="listID" type="integer" column="listID"/>
+    <field name="time" type="integer" column="time" nullable="true"/>
+    <field name="status" type="integer" column="status" nullable="true" />
+    <field name="startDate" type="datetime" column="start_date"/>
+    <field name="dueDate" type="datetime" column="due_date" nullable="true"/>
+  </entity>
+</doctrine-mapping>
